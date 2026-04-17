@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DroneScope Media - Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1c1c1c;
+            color: #ececee;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #161616;
+            padding: 18px 24px;
+            border-bottom: 1px solid #2f2f33;
+        }
+        .nav-container {
+            max-width: 1180px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+        }
+        header img {
+            height: 50px;
+            width: auto;
+            border-radius: 10px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+        }
+        nav a {
+            color: #d7d7d7;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.25s ease;
+        }
+        nav a:hover {
+            color: #4b85ff;
+        }
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 80px 24px;
+            background: linear-gradient(180deg, rgba(28,28,28,0.95), rgba(28,28,28,0.95)), url('images/image A1.jpg') center/cover no-repeat;
+        }
+        .hero-content {
+            max-width: 760px;
+        }
+        .hero h1 {
+            font-size: clamp(2.5rem, 4vw, 3.8rem);
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 620px;
+            margin: 0 auto 28px;
+            color: #c0c3cb;
+        }
+        .hero a {
+            display: inline-block;
+            padding: 14px 28px;
+            background: #4b85ff;
+            color: #ffffff;
+            border-radius: 999px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: background 0.25s ease;
+        }
+        .hero a:hover {
+            background: #3a6de1;
+        }
+        .section {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+        .section-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        .section-title h2 {
+            font-size: 2rem;
+            color: #ffffff;
+        }
+        .section-title p {
+            color: #b8bac0;
+            max-width: 560px;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+        }
+        .card {
+            background: #232326;
+            border: 1px solid #2f3035;
+            border-radius: 18px;
+            padding: 28px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            transition: transform 0.25s ease, border-color 0.25s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #4b85ff;
+        }
+        .card h3 {
+            margin-bottom: 14px;
+            font-size: 1.3rem;
+            color: #ffffff;
+        }
+        .card p {
+            color: #c0c3cb;
+            margin-bottom: 18px;
+        }
+        .card small {
+            color: #8f93a1;
+        }
+        .cta-banner {
+            background: #20232a;
+            border: 1px solid #30333c;
+            border-radius: 20px;
+            padding: 48px 30px;
+            text-align: center;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+        }
+        .cta-banner h2 {
+            font-size: 2rem;
+            margin-bottom: 18px;
+            color: #ffffff;
+        }
+        .cta-banner p {
+            color: #c0c3cb;
+            margin-bottom: 26px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cta-banner a {
+            display: inline-block;
+            padding: 14px 28px;
+            background: #4b85ff;
+            color: #ffffff;
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: background 0.25s ease;
+        }
+        .cta-banner a:hover {
+            background: #3a6de1;
+        }
+        footer {
+            background-color: #161616;
+            text-align: center;
+            color: #9fa3ae;
+            padding: 24px 20px;
+            border-top: 1px solid #2f2f33;
+        }
+        @media (max-width: 640px) {
+            header .nav-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            nav ul {
+                flex-wrap: wrap;
+            }
+            .hero {
+                padding: 80px 16px;
+            }
+            .section {
+                padding: 40px 16px;
+            }
+            .section-title {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <img src="images/image A1.jpg" alt="DroneScope Media Logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about us.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>DroneScope Media</h1>
+                <p>Clean aerial photography, cinematic drone video, and reliable inspection services for your property or business.</p>
+                <a href="services.html">Explore Services</a>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section-title">
+                <h2>What we offer</h2>
+                <p>Professional aerial media services for real estate, commercial, event, and inspection projects.</p>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <h3>Real Estate Media</h3>
+                    <p>Showcase homes and developments with aerial photos, videos, and virtual walkthroughs.</p>
+                    <small>Fast delivery for listings.</small>
+                </div>
+                <div class="card">
+                    <h3>Event Coverage</h3>
+                    <p>Capture launches, ceremonies, and outdoor occasions with striking aerial visuals.</p>
+                    <small>Ready for web and social sharing.</small>
+                </div>
+                <div class="card">
+                    <h3>Inspection Flights</h3>
+                    <p>Inspect roofs, solar panels, and structures safely with detailed aerial imagery.</p>
+                    <small>Accurate visuals for review and reporting.</small>
+                </div>
+            </div>
+        </section>
+        <section class="section cta-banner">
+            <h2>Start your project today</h2>
+            <p>Get a quote or book a shoot in minutes. We make aerial media easy, reliable and ready to use.</p>
+            <a href="Contact us.html">Contact Us</a>
+        </section>
+    </main>
+    <footer>
+        &copy; 2026 DroneScope Media — All rights reserved
+    </footer>
+</body>
+</html>

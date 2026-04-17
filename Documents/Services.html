@@ -1,0 +1,232 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DroneScope Media - Services</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #242424;
+            color: #ececee;
+        }
+        header {
+            background: linear-gradient(180deg, #1f1f1f 0%, #1b1b1b 100%);
+            padding: 18px 16px;
+            border-bottom: 1px solid #2f2f33;
+        }
+        .nav-inner {
+            max-width: 1120px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        header img {
+            height: 50px;
+            width: auto;
+            border-radius: 10px;
+            border: 1px solid rgba(75, 133, 255, 0.16);
+            padding: 4px;
+        }
+        nav a {
+            color: #d7d7d7;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 600;
+            transition: color 0.25s ease;
+        }
+        nav a:hover {
+            color: #4b85ff;
+        }
+        main {
+            max-width: 1120px;
+            margin: 34px auto 48px;
+            padding: 0 16px;
+        }
+        .hero {
+            padding: 40px 24px;
+            background: linear-gradient(135deg, #2b2b2f 0%, #25262b 100%);
+            border: 1px solid #35363a;
+            border-radius: 18px;
+            margin-bottom: 32px;
+            box-shadow: inset 0 0 0 1px rgba(75, 133, 255, 0.08);
+            border-left: 6px solid #4b85ff;
+        }
+        .hero h1 {
+            margin: 0 0 14px;
+            font-size: clamp(2rem, 3vw, 3rem);
+            color: #eef2ff;
+        }
+        .hero p {
+            margin: 0;
+            color: #c0c3cb;
+            line-height: 1.7;
+        }
+        .services-list {
+            display: grid;
+            gap: 20px;
+            margin-bottom: 32px;
+        }
+        .service-item {
+            background: #27272a;
+            border: 1px solid #35363a;
+            border-radius: 16px;
+            padding: 24px;
+        }
+        .service-item h2 {
+            margin: 0 0 10px;
+            font-size: 1.35rem;
+            color: #4b85ff;
+        }
+        .service-item p,
+        .service-item ul {
+            margin: 0;
+            color: #d0d2d7;
+            line-height: 1.75;
+        }
+        .service-item ul {
+            margin-top: 12px;
+            padding-left: 20px;
+        }
+        .service-item li {
+            margin-bottom: 10px;
+        }
+        .service-item li::marker {
+            color: #4b85ff;
+        }
+        .service-item:nth-child(1) {
+            border-left: 4px solid #4b85ff;
+        }
+        .service-item:nth-child(2) {
+            border-left: 4px solid #66d2ff;
+        }
+        .service-item:nth-child(3) {
+            border-left: 4px solid #8ab4ff;
+        }
+        .service-item h2 {
+            color: #f0f3ff;
+        }
+        .summary {
+            background: linear-gradient(135deg, #27272a 0%, #232427 100%);
+            border: 1px solid #35363a;
+            border-radius: 16px;
+            padding: 26px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(75, 133, 255, 0.08);
+        }
+        .summary h2 {
+            margin-bottom: 14px;
+            color: #4b85ff;
+        }
+        .summary p {
+            margin: 0;
+            color: #d0d2d7;
+            line-height: 1.75;
+        }
+        .cta {
+            margin-top: 32px;
+            text-align: center;
+        }
+        .cta a {
+            display: inline-block;
+            padding: 14px 28px;
+            border-radius: 999px;
+            background: #4b85ff;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 700;
+            transition: background 0.25s ease, transform 0.25s ease;
+            box-shadow: 0 8px 20px rgba(75, 133, 255, 0.2);
+        }
+        .cta a:hover {
+            background: #3a6de1;
+            transform: translateY(-2px);
+        }
+        footer {
+            text-align: center;
+            padding: 20px 16px;
+            color: #b0b3b8;
+            border-top: 1px solid #2f2f33;
+        }
+        @media (max-width: 680px) {
+            .nav-inner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            nav {
+                width: 100%;
+            }
+            nav a {
+                display: inline-block;
+                margin-bottom: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-inner">
+            <img src="images/image A1.jpg" alt="DroneScope Media Logo" width="180" height="100">
+            <nav>
+                <a href="Home.html">Home</a>
+                <a href="About us.html">About Us</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="Services.html">Services</a>
+                <a href="Contact us.html">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Simple, high-quality drone services</h1>
+            <p>DroneScope Media delivers reliable aerial photography, video, inspections, and event coverage in a clean and professional package.</p>
+        </section>
+        <section class="services-list">
+            <article class="service-item">
+                <h2>Real Estate Photography</h2>
+                <p>Capture property listings with crisp aerial photos and polished visuals that help sell faster.</p>
+                <ul>
+                    <li>Exterior drone shots</li>
+                    <li>Property walkthroughs</li>
+                    <li>Quick delivery</li>
+                </ul>
+            </article>
+            <article class="service-item">
+                <h2>Event Coverage</h2>
+                <p>Document your events with cinematic aerial footage for a memorable highlight reel.</p>
+                <ul>
+                    <li>Outdoor event filming</li>
+                    <li>Creative aerial angles</li>
+                    <li>Safety-first operations</li>
+                </ul>
+            </article>
+            <article class="service-item">
+                <h2>Inspect & Survey</h2>
+                <p>Use drones to inspect roofs, infrastructure, and construction sites faster and safer.</p>
+                <ul>
+                    <li>Detailed image capture</li>
+                    <li>Progress documentation</li>
+                    <li>Clear reporting</li>
+                </ul>
+            </article>
+        </section>
+        <section class="summary">
+            <h2>Why choose us?</h2>
+            <p>We keep our services straightforward, with dependable pilots, quality results, and quick turnaround. Perfect for property marketing, events, and visual inspections.</p>
+        </section>
+        <div class="cta">
+            <a href="Contact us.html">Request a quote</a>
+        </div>
+    </main>
+    <footer>
+        &copy; 2026 DroneScope Media
+    </footer>
+</body>
+</html>

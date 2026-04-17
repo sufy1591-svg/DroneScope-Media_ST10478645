@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DroneScope Media Gallery</title>
+    <style>
+        :root {
+            color-scheme: dark;
+            background: #121218;
+            color: #eef0f5;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #2c2c2c;
+            color: #eef0f5;
+        }
+        header {
+            background: linear-gradient(180deg, #262626 0%, #202020 100%);
+            border-bottom: 2px solid #4b85ff;
+            padding: 22px 24px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: clamp(1.7rem, 2.5vw, 2.6rem);
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #eef2ff;
+        }
+        header p {
+            margin: 8px auto 0;
+            max-width: 720px;
+            color: #b8bccc;
+        }
+        .section-title h2 {
+            color: #eef2ff;
+        }
+        .section-title span {
+            color: #aab0bf;
+        }
+        nav {
+            margin-top: 18px;
+        }
+        nav a {
+            color: #c7c9d3;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: 600;
+        }
+        nav a:hover {
+            color: #ffffff;
+        }
+        main {
+            max-width: 1180px;
+            margin: 30px auto 54px;
+            padding: 0 18px;
+        }
+        .section-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-bottom: 18px;
+        }
+        .section-title h2 {
+            margin: 0;
+            font-size: 1.6rem;
+        }
+        .section-title span {
+            color: #8f93a1;
+            font-size: 0.95rem;
+        }
+        .gallery-grid,
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 18px;
+            margin-bottom: 40px;
+        }
+        .gallery-item,
+        .video-card {
+            background: linear-gradient(180deg, rgba(75,133,255,0.08), rgba(255,255,255,0) 70%);
+            border: 1px solid rgba(75,133,255,0.18);
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 24px 60px rgba(0,0,0,0.18);
+            transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+        }
+        .gallery-item:hover,
+        .video-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(255,255,255,0.14);
+            box-shadow: 0 32px 72px rgba(0,0,0,0.26);
+        }
+        .gallery-item img,
+        .video-card video {
+            width: 100%;
+            display: block;
+            aspect-ratio: 16 / 10;
+            object-fit: cover;
+        }
+        .media-label {
+            padding: 14px 16px 18px;
+            font-size: 0.98rem;
+            color: #e9eef8;
+        }
+        .media-label small {
+            display: block;
+            color: #8f93a1;
+            margin-top: 4px;
+        }
+        .empty-note {
+            background: rgba(255,255,255,0.05);
+            border: 1px dashed rgba(255,255,255,0.18);
+            padding: 24px;
+            border-radius: 18px;
+            text-align: center;
+            color: #b2b8c7;
+        }
+        footer {
+            text-align: center;
+            padding: 18px 16px 30px;
+            color: #8f93a1;
+            font-size: 0.95rem;
+        }
+        @media (max-width: 520px) {
+            .section-title {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DroneScope Media Gallery</h1>
+        <p>Browse your downloaded drone photos and video clips. This page is built to showcase your media in a clean, responsive gallery layout.</p>
+        <nav>
+            <a href="Home.html">Home</a> |
+            <a href="About us.html">About Us</a> |
+            <a href="Gallery.html">Gallery</a> |
+            <a href="Services.html">Services</a> |
+            <a href="Contact us.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="section-title">
+                <h2>Photos</h2>
+                <span>High-resolution stills from your collection</span>
+            </div>
+            <div class="gallery-grid">
+                <article class="gallery-item">
+                    <img src="images/dilanarezzo-drone-4768213.jpg" alt="Aerial drone photo">
+                    <div class="media-label">Aerial View Photo<small>dilanarezzo-drone-4768213.jpg</small></div>
+                </article>
+                <article class="gallery-item">
+                    <img src="images/image A1.jpg" alt="DroneScope Media logo asset">
+                    <div class="media-label">Logo / Brand Asset<small>image A1.jpg</small></div>
+                </article>
+                <article class="gallery-item">
+                    <img src="images/image B.png" alt="DroneScope brand image">
+                    <div class="media-label">Drone Brand Image<small>image B.png</small></div>
+                </article>
+                <article class="gallery-item">
+                    <img src='images/The capped malayali on Instagram_ “DJI mini2”.jpg' alt='DJI mini2 drone shot'>
+                    <div class="media-label">DJI Mini 2 Capture<small>The capped malayali on Instagram_ “DJI mini2”.jpg</small></div>
+                </article>
+                <article class="gallery-item">
+                    <img src="images/benefits-of-drone-video-916x1024.webp" alt="Drone video benefits image">
+                    <div class="media-label">Drone Video Benefits<small>benefits-of-drone-video-916x1024.webp</small></div>
+                </article>
+            </div>
+        </section>
+        <section>
+            <div class="section-title">
+                <h2>Videos</h2>
+                <span>Preview your downloaded MP4 clips directly in the browser</span>
+            </div>
+            <div class="video-grid">
+                <article class="video-card">
+                    <video controls preload="metadata">
+                        <source src="images/Download.mp4" type="video/mp4">
+                        Your browser does not support video playback.
+                    </video>
+                    <div class="media-label">Video Clip 1<small>Download.mp4</small></div>
+                </article>
+                <article class="video-card">
+                    <video controls preload="metadata">
+                        <source src="images/Download (1).mp4" type="video/mp4">
+                        Your browser does not support video playback.
+                    </video>
+                    <div class="media-label">Video Clip 2<small>Download (1).mp4</small></div>
+                </article>
+                <article class="video-card">
+                    <video controls preload="metadata">
+                        <source src="images/Download (2).mp4" type="video/mp4">
+                        Your browser does not support video playback.
+                    </video>
+                    <div class="media-label">Video Clip 3<small>Download (2).mp4</small></div>
+                </article>
+            </div>
+        </section>
+        <section class="empty-note">
+            Add more photos and videos to the <strong>images/</strong> folder and they will appear here when you refresh the page.
+        </section>
+    </main>
+    <footer>
+        &copy; 2026 DroneScope Media · Gallery built for your downloaded media
+    </footer>
+</body>
+</html>
