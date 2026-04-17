@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DroneScope Media Gallery</title>
+    <title>DroneScope Media Showcase</title>
     <style>
         :root {
             color-scheme: dark;
@@ -76,10 +76,15 @@
             color: #8f93a1;
             font-size: 0.95rem;
         }
-        .gallery-grid,
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 18px;
+            margin-bottom: 40px;
+        }
         .video-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 18px;
             margin-bottom: 40px;
         }
@@ -98,7 +103,13 @@
             border-color: rgba(255,255,255,0.14);
             box-shadow: 0 32px 72px rgba(0,0,0,0.26);
         }
-        .gallery-item img,
+        .gallery-item img {
+            width: 100%;
+            display: block;
+            aspect-ratio: 4 / 3;
+            height: clamp(180px, 22vw, 240px);
+            object-fit: cover;
+        }
         .video-card video {
             width: 100%;
             display: block;
@@ -134,13 +145,20 @@
                 flex-direction: column;
                 align-items: flex-start;
             }
+            .gallery-grid,
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+            .gallery-item img {
+                height: 210px;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>DroneScope Media Gallery</h1>
-        <p>Browse your downloaded drone photos and video clips. This page is built to showcase your media in a clean, responsive gallery layout.</p>
+        <h1>DroneScope Media Showcase</h1>
+        <p>A curated gallery of aerial photos and cinematic video productions.</p>
         <nav>
             <a href="index.html">Home</a> |
             <a href="about us.html">About Us</a> |
@@ -153,35 +171,36 @@
         <section>
             <div class="section-title">
                 <h2>Photos</h2>
-                <span>High-resolution stills from your collection</span>
+                <span>Professional-grade still photography from our drone shoots.</span>
             </div>
             <div class="gallery-grid">
                 <article class="gallery-item">
                     <img src="images/dilanarezzo-drone-4768213.jpg" alt="Aerial drone photo">
-                    <div class="media-label">Aerial View Photo<small>dilanarezzo-drone-4768213.jpg</small></div>
-                </article>
-                <article class="gallery-item">
-                    <img src="images/image A1.jpg" alt="DroneScope Media logo asset">
-                    <div class="media-label">Logo / Brand Asset<small>image A1.jpg</small></div>
-                </article>
-                <article class="gallery-item">
-                    <img src="images/image B.png" alt="DroneScope brand image">
-                    <div class="media-label">Drone Brand Image<small>image B.png</small></div>
+                    <div class="media-label">Aerial View Photo<small></small></div>
                 </article>
                 <article class="gallery-item">
                     <img src='images/The capped malayali on Instagram_ “DJI mini2”.jpg' alt='DJI mini2 drone shot'>
-                    <div class="media-label">DJI Mini 2 Capture<small>The capped malayali on Instagram_ “DJI mini2”.jpg</small></div>
+                    <div class="media-label">DJI Mini 2 Capture<small></small></div>
+                </article>
+                
+                <article class="gallery-item">
+                    <img src="images/Download (2).jpg" alt="Downloaded image">
+                    <div class="media-label">Drone Showcase<small></small></div>
                 </article>
                 <article class="gallery-item">
-                    <img src="images/benefits-of-drone-video-916x1024.webp" alt="Drone video benefits image">
-                    <div class="media-label">Drone Video Benefits<small>benefits-of-drone-video-916x1024.webp</small></div>
+                    <img src="images/⌇DJI Mini 4 pro.jpg" alt="DJI Mini 4 Pro shot">
+                    <div class="media-label">DJI Mini 4 Pro<small></small></div>
+                </article>
+                <article class="gallery-item">
+                    <img src="images/A Beginner's Guide to FPV Drone Flying_ From Simulator to Sky — Karlie Place.jpg" alt="FPV Drone Flying Guide">
+                    <div class="media-label">FPV Drone Flying Guide<small></small></div>
                 </article>
             </div>
         </section>
         <section>
             <div class="section-title">
                 <h2>Videos</h2>
-                <span>Preview your downloaded MP4 clips directly in the browser</span>
+                <span>Watch cinematic drone footage captured in stunning detail.</span>
             </div>
             <div class="video-grid">
                 <article class="video-card">
@@ -189,30 +208,28 @@
                         <source src="images/Download.mp4" type="video/mp4">
                         Your browser does not support video playback.
                     </video>
-                    <div class="media-label">Video Clip 1<small>Download.mp4</small></div>
+                    <div class="media-label">Outdoor aerial showcase<small></small></div>
                 </article>
                 <article class="video-card">
                     <video controls preload="metadata">
                         <source src="images/Download (1).mp4" type="video/mp4">
                         Your browser does not support video playback.
                     </video>
-                    <div class="media-label">Video Clip 2<small>Download (1).mp4</small></div>
+                    <div class="media-label">FPV showcase<small></small></div>
                 </article>
                 <article class="video-card">
                     <video controls preload="metadata">
                         <source src="images/Download (2).mp4" type="video/mp4">
                         Your browser does not support video playback.
                     </video>
-                    <div class="media-label">Video Clip 3<small>Download (2).mp4</small></div>
+                    <div class="media-label">Aerial Showcase<small></small></div>
                 </article>
             </div>
         </section>
-        <section class="empty-note">
-            Add more photos and videos to the <strong>images/</strong> folder and they will appear here when you refresh the page.
-        </section>
+      
     </main>
     <footer>
-        &copy; 2026 DroneScope Media Â· Gallery built for your downloaded media
+        &copy; 2026 DroneScope Media Gallery. All rights reserved. | Designed by DroneScope Team
     </footer>
 </body>
 </html>
