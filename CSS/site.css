@@ -80,6 +80,10 @@ nav a:hover {
     color: #ffffff;
 }
 
+nav[aria-label="Primary"] a[aria-current="page"] {
+    color: #ffffff;
+}
+
 main,
 .section {
     max-width: 1180px;
