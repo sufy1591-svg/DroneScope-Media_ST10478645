@@ -1,0 +1,2 @@
+Website for DroneScope Media
+DroneScope Media is a start-up digital media business based in Lenasia, Johannesburg. The business specialises in drone photography and videography, offering aerial visuals for events, real estate, and promotional content. The idea behind the business is to provide modern and creative media solutions using drone technology, which allows for unique camera angles and high-quality visuals.
